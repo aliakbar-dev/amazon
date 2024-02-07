@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:amazon
+    username: sa
+    password: sa
+    driverClassName: org.h2.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    defer-datasource-initialization: true
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+      settings.trace: false
+      settings.web-allow-others: false
